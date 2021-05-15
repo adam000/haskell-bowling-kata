@@ -1,0 +1,23 @@
+Name:           Bowling
+Version:        1.0.0
+cabal-version:  >= 1.8
+build-type:     Simple
+
+Executable Bowling
+    Exposed-Modules:    Bowling
+    Main-is:            bowling-interface.hs
+    Other-Modules:      Bowling
+    Build-Depends:      base >= 3 && < 5
+
+Library
+    Exposed-Modules:    Bowling
+    Build-Depends:      base >= 3 && < 5
+
+Test-Suite unit-tests
+    type:               exitcode-stdio-1.0
+    hs-source-dirs:     test
+    Main-is:            Tests.hs
+    Build-Depends:      base >= 3 && < 5
+                      , tasty
+                      , tasty-hunit
+                      , Bowling

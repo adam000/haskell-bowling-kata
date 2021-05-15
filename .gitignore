@@ -1,0 +1,6 @@
+bowling-interface
+bowling-test
+*.hi
+*.o
+dist-newstyle
+
